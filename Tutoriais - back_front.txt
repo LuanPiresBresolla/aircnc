@@ -1,0 +1,27 @@
+yarn init -y -> cria o package.json
+
+yarn add express -> pacote para tratativas de rotas
+
+yarn add nodemon -D -> pacote para o serviço verificar alterações no codigo, tag -D para a dependencia servir apenas quando estiver sendo desenvolvido o projeto. Adicionar essa código no package.json
+
+"scripts": {
+    "dav": "nodemon src/server.js"
+},
+
+req.query = acessar query params (para filtros)
+req.params = acessar route params (para edição e delete)
+req.body = acessar corpo da requisição
+
+yarn add mongoose -> Trabalhar com o banco de dados mongo db
+
+// index - retorna listagem de sessões
+// show - listar uma unica seção
+// store - criar uma seção
+// updta - alterar uma seção
+// destroy - deletar uma seção
+
+yarn add multer -> Trabalha com upload de imagens
+
+yarn create react-app "nome" -> criando projeto pronto para web
+
+yarn add socket.io -> tempo real react e react native
