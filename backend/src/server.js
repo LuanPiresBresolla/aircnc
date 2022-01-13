@@ -12,7 +12,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect('mongodb+srv://luan:luan@cluster0-widj6.mongodb.net/semana09?retryWrites=true&w=majority', {
+mongoose.connect("mongodb://192.168.3.30:27017/aircnc", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
@@ -37,4 +37,4 @@ app.use(express.json()); // para o express entender os objetos JSON
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 app.use(routes);
 
-server.listen(3333);
+server.listen(3333, () => console.log('Server started in port 3333 🔥🚀'));
